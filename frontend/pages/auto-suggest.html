@@ -20,6 +20,39 @@
             text-align: center;
             margin-top: 100px;
         }
+        .logo-first {
+            color:palevioletred;
+        }
+        .logo-second {
+            color: lightseagreen;
+        }
+        .lens{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+        p{
+            color: gray;
+            font-size: 22px;
+        }
+        .lens{
+            position: relative;
+            left: 40px;
+            top: 2px;
+
+        }
+        .search {
+            padding: 15px 15px 15px 45px;
+            border-radius: 40px;
+            width: 50%;
+        }
+        #suggestions{
+            width: 50%;
+            margin-left: 23.9%;
+            padding: 15px 15px 15px 45px;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -29,9 +62,17 @@
     </div>
 
      <div class="search-section">
-    <h1> BeingInfinity</h1>
+    <h1><span class="logo-first">Being</span><span class="logo-second">Infinity</span></h1>
     <p>One million phrases. Four algorithms. Prefix based Auto Suggestion </p>
-    &#128269;<input  type="text" placeholder="Start typing to search phrases...">
+
+    <span> 
+         <span class="lens"> &#128269; </span>
+         <input  type="text" class="search"   placeholder="Start typing to search phrases...">
+    </span>
+
+    <div id="suggestions">
+        suggestions will be displayed here
+    </div>
      </div>
 </body>
 </html>
